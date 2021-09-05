@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GP_test_md_hasanuzzaman</string>
+    <string name="find">Find</string>
+    <string name="year_input_hint">Enter 2 years separated by a comma, [start, end]</string>
+    <string name="total_event">Total Event:</string>
+    <string name="total_relax_start">Total relax start:</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:hint="@string/year_input_hint" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_year"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="@string/find" />
+
+    <TextView
+        android:id="@+id/tv_label_total_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_find"
+        android:layout_marginStart="64dp"
+        android:padding="16dp"
+        android:text="@string/total_event"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_total_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_find"
+        android:layout_toEndOf="@+id/tv_label_total_event"
+        android:padding="16dp"
+        tools:text="7"/>
+
+    <TextView
+        android:id="@+id/tv_label_relax_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_label_total_event"
+        android:layout_marginStart="64dp"
+        android:padding="16dp"
+        android:text="@string/total_relax_start"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_relax_starts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_label_total_event"
+        android:layout_toEndOf="@+id/tv_label_relax_events"
+        android:padding="16dp"
+        tools:text="7"/>
+
+</RelativeLayout>
